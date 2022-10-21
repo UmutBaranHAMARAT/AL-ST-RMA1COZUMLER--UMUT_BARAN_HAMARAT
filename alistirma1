@@ -1,0 +1,161 @@
+#####ALIŞTIRMALAR 1######
+
+
+###1. soru###
+
+"""k=[]
+for i in range(19,203,3):
+    k+=[i]
+print(sum(k))"""
+
+
+###2.soru###
+#   :(   #
+"""toplam=0
+for n in range(1,9999999):
+    toplam+=n
+print(f"pi sayisinin yaklasik degeri={(6**(1/2))/toplam}")"""
+
+
+###3.soruyu yapamadım###
+
+
+###4.soru###
+
+"""for i in range(100,1000):
+    k=str(i)
+    l=k[::-1]
+    if k==l:
+        print(k)"""
+
+
+###5.soru###
+
+"""for i in range(1000,10000):
+    k=str(i)
+    l=k[::-1]
+    if k==l:
+        print(k)"""
+
+
+###6.soru###
+
+"""k=0
+for i in range(1000,10000):
+    j=str(i)
+    if j[0]>j[3]:
+        k+=1
+print(k)"""
+
+
+###7.soru###
+
+"""k=0
+for i in range(100,1000):
+    j=str(i)
+    if int(j[0])+int(j[1]) == int(j[2]):
+        print(i)
+        k+=1
+print(f"Kosulu saglayan {k} tane sayi vardir.")"""
+
+
+###8.soru###
+###NEDEN YANLIŞ HESAPLIYOR ANLAMADIM!###
+"""k=0
+for i in range(100,1000,2):
+    j=str(i)
+    if j[0]!=j[1]!=j[2]:
+        break
+    else:
+        k+=1
+        print(k)"""
+
+
+###9.soru###
+
+"""for i in range(1,1000):
+    j=str(i)+"00"
+    if int(j[0])+int(j[1])+int(j[2]) < 9:
+        print(i,end=" ")"""
+
+
+###10.soru###
+
+"""k=0
+for i in range(10000,100000):
+    j=str(i)
+    if j[0]==j[4] and j[1]==j[3]:
+        k+=1
+print(k)"""
+
+
+###11.soru###
+
+"""k=[]
+for i in range(1,350):
+    if 125 % i == 200 % i and  125 % i == 350 % i and 200 % i == 350 % i:
+        k+=[i]
+print(max(k))"""
+
+
+###12.soru###
+
+"""for i in range (0,2006):
+    j=str(i)+"0000"
+    if 2005-i==int(j[0])+int(j[1])+int(j[2])+int(j[3]):
+        print(i)"""
+        
+
+###13.soru###
+
+"""for a in range(10,100):
+    x=str(a)
+    for b in range(10,100):
+        y=str(b)
+        if int(x+y)==(a+b)*11:
+            print(a,b)"""
+
+
+###14.soru###
+###YAPAMADIM :(
+"""k=[]
+for i in range(1,121212):
+    for j in range(1,121212):
+        if i*j==121212:
+            k+="""
+
+
+###15.soru###
+
+"""for i in range(10000,100000):
+    bolunebilir=False
+    for j in range(2,i):
+        if i%j==0:
+            bolunebilir=True
+    if bolunebilir==False:
+        print(i)"""
+
+
+###16.soru###
+
+"""sayi=int(input("Bir sayi giriniz: "))
+for i in range(2,sayi):
+    if sayi%i==0:
+        print(f"{sayi} asal degildir.")
+        break
+    else:
+        print(f"{sayi} asaldir.")
+        break"""
+
+
+###17.soru###
+
+"""sayi=int(input("3 veya 4 basamakli bir sayi giriniz: "))
+k=str(sayi)
+l=k[::-1]
+if k==l and 99<sayi<10000:
+    print(f"{sayi} palindromiktir.")
+if k!=l and 99<sayi<10000:
+    print(f"{sayi} palindromik değildir.")
+if sayi<100 or sayi>9999:
+    print(f"3 VEYA 4 BASAMAKLİ SAYİ GİRMELİSİNİZ!")"""
