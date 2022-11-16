@@ -1,161 +1,169 @@
-#####ALIŞTIRMALAR 1######
+"""ALIŞTIRMALAR"""
 
+#1.SORU
 
-###1. soru###
-
-"""k=[]
+"""a = 0
 for i in range(19,203,3):
-    k+=[i]
-print(sum(k))"""
+    a += i
+print(a)"""
 
+#2.SORU
 
-###2.soru###
-#   :(   #
-"""toplam=0
-for n in range(1,9999999):
-    toplam+=n
-print(f"pi sayisinin yaklasik degeri={(6**(1/2))/toplam}")"""
+"""a = 0
+for n in range(1,999999):
+    a += 1/(n**2)
+print((6*a)**0.5)"""
 
+#3.SORU
 
-###3.soruyu yapamadım###
+"""def factoriel(sayi):
+    while sayi>=0:
+        if sayi == 1:
+            return 1
+        if sayi == 0:
+            return 1
+    #Recursive case
+        else:
+            return sayi*factoriel(sayi-1)
 
+a = 0
+for i in range(1,999):
+    a += 1/factoriel(i)
+print(a+1)"""
 
-###4.soru###
+#4.SORU
 
-"""for i in range(100,1000):
-    k=str(i)
-    l=k[::-1]
-    if k==l:
-        print(k)"""
+"""def palindromik(x):
+    if x == int(str(x)[::-1]):
+        return True
 
-
-###5.soru###
-
-"""for i in range(1000,10000):
-    k=str(i)
-    l=k[::-1]
-    if k==l:
-        print(k)"""
-
-
-###6.soru###
-
-"""k=0
-for i in range(1000,10000):
-    j=str(i)
-    if j[0]>j[3]:
-        k+=1
-print(k)"""
-
-
-###7.soru###
-
-"""k=0
 for i in range(100,1000):
-    j=str(i)
-    if int(j[0])+int(j[1]) == int(j[2]):
+    if palindromik(i):
+        print(i)"""
+
+#5.SORU
+
+"""def palindromik(x):
+    if x == int(str(x)[::-1]):
+        return True
+
+for i in range(1000,10000):
+    if palindromik(i):
+        print(i)"""
+
+#6.SORU
+
+"""a = 0
+for i in range(1000,10000):
+    if int(str(i)[0]) > int(str(i)[3]):
+        a += 1
+print(a)"""
+
+#7.SORU
+
+"""a = 0
+for i in range(100,1000):
+    if int(str(i)[0]) + int(str(i)[1]) == int(str(i)[2]):
+        a += 1
         print(i)
-        k+=1
-print(f"Kosulu saglayan {k} tane sayi vardir.")"""
+print(a)"""
 
+#8.SORU
 
-###8.soru###
-###NEDEN YANLIŞ HESAPLIYOR ANLAMADIM!###
-"""k=0
+"""a = 0
 for i in range(100,1000,2):
-    j=str(i)
-    if j[0]!=j[1]!=j[2]:
-        break
-    else:
-        k+=1
-        print(k)"""
+    if int(str(i)[0]) == int(str(i)[1]) != int(str(i)[2]) or int(str(i)[0]) != int(str(i)[1]) == int(str(i)[2]) or int(str(i)[0]) == int(str(i)[2]) != int(str(i)[1]):
+        a += 1
+print(a)"""
 
+#9.SORU
 
-###9.soru###
-
-"""for i in range(1,1000):
-    j=str(i)+"00"
-    if int(j[0])+int(j[1])+int(j[2]) < 9:
+"""for i in range(1,999):
+    if int(str(i)[0]) + int((str(i)+"00")[1]) + int((str(i)+"00")[2]) <9 :
         print(i,end=" ")"""
 
+#10.SORU
 
-###10.soru###
-
-"""k=0
+"""a = 0
 for i in range(10000,100000):
-    j=str(i)
-    if j[0]==j[4] and j[1]==j[3]:
-        k+=1
-print(k)"""
+    if int(str(i)[0]) == int(str(i)[4]) and int(str(i)[1]) == int(str(i)[3]):
+        a += 1
+print(a)"""
 
+#11.SORU
 
-###11.soru###
-
-"""k=[]
+"""a = []
 for i in range(1,350):
-    if 125 % i == 200 % i and  125 % i == 350 % i and 200 % i == 350 % i:
-        k+=[i]
-print(max(k))"""
+    if 125%i == 200%i == 350%i:
+        a += [i]
+print(max(a))"""
 
+#12.SORU
 
-###12.soru###
-
-"""for i in range (0,2006):
-    j=str(i)+"0000"
-    if 2005-i==int(j[0])+int(j[1])+int(j[2])+int(j[3]):
+"""for i in range(1000,2005):
+    if 2005-i == int(str(i)[0]) + int(str(i)[1]) + int(str(i)[2]) + int(str(i)[3]):
         print(i)"""
-        
 
-###13.soru###
+#13.SORU
 
-"""for a in range(10,100):
-    x=str(a)
-    for b in range(10,100):
-        y=str(b)
-        if int(x+y)==(a+b)*11:
-            print(a,b)"""
+"""for i in range(10,100):
+    for j in range(10,100):
+        if int(str(i)+str(j)) == (i+j)*11:
+            print(i,j)"""
 
+#14.SORU
 
-###14.soru###
-###YAPAMADIM :(
-"""k=[]
-for i in range(1,121212):
+"""import math
+a = []
+for i in range(1,int(math.sqrt(121212))):
     for j in range(1,121212):
-        if i*j==121212:
-            k+="""
+        if i*j == 121212:
+            a += [i,j]
+print(a[-2],a[-1])"""
 
+#15.SORU
 
-###15.soru###
+"""def asalMi(n):
+    if n <= 1:
+        return False
+    for i in range(2,n):
+        if n%i == 0:
+            return False
+    return True
 
-"""for i in range(10000,100000):
-    bolunebilir=False
-    for j in range(2,i):
-        if i%j==0:
-            bolunebilir=True
-    if bolunebilir==False:
-        print(i)"""
+for i in range(10000,100000):
+    if asalMi(i):
+        print(asalMi(i))"""
 
+#16.SORU
 
-###16.soru###
+"""def asalMi(n):
+    if n <= 1:
+        return False
+    for i in range(2,n):
+        if n%i == 0:
+            return False
+    return True
 
-"""sayi=int(input("Bir sayi giriniz: "))
-for i in range(2,sayi):
-    if sayi%i==0:
-        print(f"{sayi} asal degildir.")
-        break
+x = int(input("bir sayı giriniz : "))
+if asalMi(x):
+    print(f"{x} asaldır")
+else:
+    print(f"{x} asal değildir")
+"""
+
+#17.SORU
+
+"""def palo(n):
+    if n == int(str(n)[::-1]):
+        return True
     else:
-        print(f"{sayi} asaldir.")
-        break"""
+        return False
 
-
-###17.soru###
-
-"""sayi=int(input("3 veya 4 basamakli bir sayi giriniz: "))
-k=str(sayi)
-l=k[::-1]
-if k==l and 99<sayi<10000:
-    print(f"{sayi} palindromiktir.")
-if k!=l and 99<sayi<10000:
-    print(f"{sayi} palindromik değildir.")
-if sayi<100 or sayi>9999:
-    print(f"3 VEYA 4 BASAMAKLİ SAYİ GİRMELİSİNİZ!")"""
+x = int(input("3 veya 4 basamakli bir sayi giriniz : "))
+if x<100 or x>1000:
+    print("3 VEYA 4 BASAMAKLI GIR!")
+elif palo(x):
+    print(f"{x} palindromiktir.")
+else:
+    print(f"{x} palindromik değildir.")"""
